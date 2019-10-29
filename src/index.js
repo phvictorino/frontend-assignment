@@ -1,8 +1,10 @@
-import 'Styles/main.scss';
+import 'Styles/main.css';
 import Vue from 'vue';
-import HelloWorld from 'Components/HelloWorld.vue';
+import App from './App.vue'
+import router from 'Router'
+import 'Components/shared'
 
 new Vue({
-  render: createElement => createElement(HelloWorld),
-  el: '#app'
-});
+  router,
+  render: h => h(App)
+}).$mount('#app');
