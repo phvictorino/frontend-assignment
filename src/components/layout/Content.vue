@@ -10,12 +10,10 @@ export default {};
 
 <style>
 .content {
-  max-width: 100vw;
+  width: 100vw;
   position: absolute;
   top: 100px;
   left: 100px;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 </style>

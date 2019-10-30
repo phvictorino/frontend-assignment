@@ -4,6 +4,9 @@
     <textarea
       v-bind="$props"
       class="textarea"
+      @click.stop="$emit('click')"
+      :readonly="readonly"
+      v-on="$listeners"
     />
     </div>
 </template>
@@ -15,11 +18,19 @@ export default {
       type: String,
       required: true
     },
+    readonly: {
+      type: Boolean,
+      default: false
+    },
     rows: {
       type: String,
       default: "4"
+    },
+    value: {
+      type: String,
+      default: ''
     }
-  }
+  },
 };
 </script>
 
